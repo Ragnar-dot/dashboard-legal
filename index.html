@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="index, follow">
+<title>Datenschutzerklärung – Dashboard</title>
+<style>
+  :root {
+    --bg: #f5f6f8;
+    --card: #ffffff;
+    --ink: #1d1f24;
+    --muted: #5b606b;
+    --accent: #2563eb;
+    --border: #e4e7ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #15171c; --card: #1d2027; --ink: #e9ebef;
+      --muted: #9aa0ab; --accent: #6ea0ff; --border: #2a2e37;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    padding: 32px 16px;
+  }
+  main {
+    max-width: 760px; margin: 0 auto; background: var(--card);
+    border: 1px solid var(--border); border-radius: 16px;
+    padding: clamp(24px, 5vw, 48px);
+  }
+  h1 { font-size: clamp(1.6rem, 4vw, 2.1rem); margin: 0 0 4px; }
+  h2 { font-size: 1.2rem; margin: 32px 0 8px; }
+  .updated { color: var(--muted); font-size: .9rem; margin-bottom: 24px; }
+  p { margin: 10px 0; }
+  a { color: var(--accent); }
+  .lead {
+    background: color-mix(in srgb, var(--accent) 10%, transparent);
+    border-left: 3px solid var(--accent); padding: 12px 16px;
+    border-radius: 8px; margin: 16px 0 24px;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: .92rem; }
+  th, td { text-align: left; padding: 9px 10px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  th { color: var(--muted); font-weight: 600; }
+  code { background: color-mix(in srgb, var(--ink) 8%, transparent); padding: 1px 5px; border-radius: 5px; font-size: .88em; }
+  footer { color: var(--muted); font-size: .85rem; margin-top: 32px; text-align: center; }
+  .wrap { overflow-x: auto; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Datenschutzerklärung</h1>
+  <p class="updated">App „Dashboard" für macOS · Stand: 30.06.2026</p>
+
+  <p class="lead"><strong>Kurzfassung:</strong> „Dashboard" ist eine lokale macOS-App.
+  Es gibt keine Benutzerkonten, keine Registrierung und kein Tracking. Wir betreiben
+  keinen eigenen Server und sammeln keine personenbezogenen Daten auf eigenen Systemen.</p>
+
+  <h2>Verantwortlich</h2>
+  <p><!-- NAME -->Alexander Keterling<br>
+  E-Mail: <!-- E-MAIL EINTRAGEN --><a href="mailto:alexander_K_@outlook.de">alexander_K_@outlook.de</a></p>
+
+  <h2>Standort</h2>
+  <p>Wenn du das Wetter-Widget nutzt, fragt die App einmalig deinen groben Standort ab
+  und übermittelt ihn an <strong>Apple WeatherKit</strong> (Wetterdaten) sowie an Apples
+  Geocoding-Dienst (Ortsname). Es gilt Apples Datenschutzrichtlinie. Der Standort wird
+  nicht von uns gespeichert. Die Berechtigung kannst du in den Systemeinstellungen
+  jederzeit widerrufen.</p>
+
+  <h2>Kalender</h2>
+  <p>Das Kalender-Widget liest mit deiner Erlaubnis anstehende Termine über das
+  System-Framework EventKit. Diese Daten bleiben auf deinem Gerät und werden nicht
+  übertragen.</p>
+
+  <h2>Internetradio</h2>
+  <p>Beim Abspielen eines Senders werden Senderlisten und Streams über den Dienst
+  <strong>radio-browser.info</strong> geladen; dabei wird die ID des angeklickten
+  Senders zur Klickzählung an radio-browser übermittelt. Es werden keine
+  personenbezogenen Daten gesendet. Sender-Logos und die Audio-Streams werden direkt
+  von den Servern des jeweiligen Senders geladen; diese sehen dabei die übliche
+  Verbindungsinformation (z. B. IP-Adresse).</p>
+
+  <h2>Aktiencharts (TradingView)</h2>
+  <p>Das Trading-Widget bindet die interaktiven Charts von <strong>TradingView</strong>
+  ein. Dazu lädt ein eingebetteter Webview Inhalte direkt von den Servern von TradingView
+  (u. a. <code>s3.tradingview.com</code>, <code>*.tradingview.com</code>, inkl.
+  WebSocket-Verbindung). Dabei können TradingView Verbindungsdaten (z. B. IP-Adresse)
+  und ggf. Cookies innerhalb des Webviews verarbeiten; es gilt die
+  <a href="https://www.tradingview.com/privacy-policy/" target="_blank" rel="noopener">Datenschutzrichtlinie von TradingView</a>.
+  Wir übermitteln keine personenbezogenen Daten an TradingView; geladen werden nur das
+  von dir gewählte Tickersymbol und der Zeitraum.</p>
+
+  <h2>Nachrichten-Feeds</h2>
+  <p>Die App lädt RSS-/Atom-Feeds direkt von den von dir gewählten Quellen (z. B.
+  BSI/CERT-Bund). Dabei sieht der jeweilige Feed-Server die technisch übliche
+  Verbindungsinformation (z. B. IP-Adresse).</p>
+
+  <h2>Feiertage</h2>
+  <p>Das Kalender-Widget ruft Feiertage über die öffentliche API api-feiertage.de ab
+  (nur das Jahr wird übermittelt, keine Personendaten).</p>
+
+  <h2>Lokale Speicherung</h2>
+  <p>Aufgaben, Radio-Favoriten und App-Einstellungen werden ausschließlich lokal auf
+  deinem Gerät gespeichert (SwiftData / UserDefaults).</p>
+
+  <h2>Benachrichtigungen</h2>
+  <p>Erinnerungen werden als lokale Mitteilungen auf deinem Gerät geplant; es werden
+  keine Daten an Push-Server gesendet.</p>
+
+  <h2>Genutzte Drittanbieter-Dienste und Domains</h2>
+  <div class="wrap">
+  <table>
+    <thead><tr><th>Funktion</th><th>Anbieter</th><th>Domain(s)</th><th>Übermittelte Daten</th></tr></thead>
+    <tbody>
+      <tr><td>Wetter</td><td>Apple WeatherKit</td><td>Apple-Server (System-Framework)</td><td>grober Standort</td></tr>
+      <tr><td>Ortsname</td><td>Apple Geocoding</td><td>Apple-Server (System-Framework)</td><td>grober Standort</td></tr>
+      <tr><td>Radio-Senderliste</td><td>radio-browser.info</td><td><code>de1.api.radio-browser.info</code>, <code>all.api.radio-browser.info</code></td><td>Suchbegriff, Ländercode, Sender-ID</td></tr>
+      <tr><td>Radio-Streams &amp; -Logos</td><td>jeweiliger Sender</td><td>sender-individuelle Server</td><td>nur Verbindungsdaten (IP)</td></tr>
+      <tr><td>Aktiencharts</td><td>TradingView</td><td><code>s3.tradingview.com</code>, <code>*.tradingview.com</code></td><td>Tickersymbol, Zeitraum; Verbindungsdaten/Cookies im Webview</td></tr>
+      <tr><td>Nachrichten-Feeds</td><td>gewählte Quellen (z. B. CERT-Bund)</td><td><code>wid.cert-bund.de</code> u. a.</td><td>nur Verbindungsdaten (IP)</td></tr>
+      <tr><td>Feiertage</td><td>api-feiertage.de</td><td><code>get.api-feiertage.de</code></td><td>nur das Jahr</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <h2>Rechtsgrundlagen der Verarbeitung</h2>
+  <p>Soweit personenbezogene Daten (z. B. Standort, IP-Adresse) verarbeitet werden,
+  erfolgt dies auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Bereitstellung der von dir
+  gewünschten Funktion, z. B. Wetter, Radio, Charts) bzw. Art. 6 Abs. 1 lit. f DSGVO
+  (berechtigtes Interesse am technisch fehlerfreien Betrieb der App). Der Zugriff auf
+  Standort und Kalender erfolgt zusätzlich erst nach deiner ausdrücklichen Einwilligung
+  über das Betriebssystem (Art. 6 Abs. 1 lit. a DSGVO), die du jederzeit in den
+  Systemeinstellungen widerrufen kannst.</p>
+
+  <h2>Deine Rechte</h2>
+  <p>Dir stehen nach der DSGVO folgende Rechte zu: Auskunft (Art. 15), Berichtigung
+  (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18),
+  Datenübertragbarkeit (Art. 20) sowie Widerspruch gegen die Verarbeitung (Art. 21).
+  Eine erteilte Einwilligung kannst du jederzeit mit Wirkung für die Zukunft widerrufen.
+  Da diese App keine personenbezogenen Daten auf eigenen Systemen speichert, beziehen
+  sich Auskunfts- oder Löschanfragen vor allem auf die lokal auf deinem Gerät
+  gespeicherten Daten, die du selbst durch Löschen der App bzw. der Inhalte entfernen
+  kannst.</p>
+
+  <h2>Beschwerderecht</h2>
+  <p>Du hast das Recht, dich bei einer Datenschutz-Aufsichtsbehörde über die
+  Verarbeitung deiner personenbezogenen Daten zu beschweren (Art. 77 DSGVO).</p>
+
+  <h2>Kontakt</h2>
+  <p>Bei Fragen zum Datenschutz: <a href="mailto:alexander_K_@outlook.de">alexander_K_@outlook.de</a></p>
+
+  <p style="margin-top:24px;"><a href="impressum.html">→ Impressum</a></p>
+
+  <footer>© 2026 Dashboard. Diese Seite enthält keine Tracking- oder Analysewerkzeuge.</footer>
+</main>
+</body>
+</html>
